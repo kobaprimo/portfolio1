@@ -16,7 +16,7 @@ body {
 .my-image {
     width: 960px;
     height: 600px;
-    background-image: url("myphoto.jpg/zikoshoukai-img.jpg");
+    background-image: url("zikoshoukai-img.jpg");
     background-size: cover;
     background-position: center;
     opacity: 0.8;
