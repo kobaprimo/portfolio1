@@ -1,0 +1,304 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }}
+
+.my-image {
+    width: 960px;
+    height: 600px;
+    background-image: url("myphoto.jpg/zikoshoukai-img.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.site-header{
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.site-footer {
+    color: white;
+    padding: 20px 0 20px 10px;
+    border-radius: 10px;
+    background-color: purple;
+}
+
+.site-title {
+    margin: 0;
+    word-spacing: 10px;
+    padding-top: 450px;
+    font-size: 40px;
+}
+
+.site-nav .nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.nav-list a {
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    opacity: 0.6;
+}
+
+.section-title {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-top: 40px;
+    background-color: rgba(128, 0, 128, 0.3);
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.project-card p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.about-section,.skills-section,.portfolio-section{
+    margin-top: 40px;
+}
+
+.profile-image {
+    width: 200px;
+    border-radius: 15px;
+    display: block;
+    margin: 20px auto;
+}
+
+.about-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.Career-text {
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.Career-item {
+    line-height: 1.8;
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 20px;
+    color: white;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    border-radius: 10px;
+    text-decoration: none;
+    position: relative;
+    word-spacing: 2px;
+    box-shadow: 0 4px 6px #333;
+}
+
+.btn i {
+    margin-right: 10px;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+.skills-section {
+    height: auto;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 250px;
+}
+
+.skill-icon {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin-top: 40px;
+    
+}
+
+.skill-icon img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+
+.skill-icon p {
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    display: flex;
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.skill-txt p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto 0;
+    max-width: 100%;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.port-btn-container {
+    display: flex;
+    justify-content: space-between; 
+    margin: 50px 0;
+}
+
+.arrow-icon {
+    height: 170px;
+    width: 170px;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1s ease-in-out infinite;
+}
+
+
+.cafe-port {
+  display: inline-block;
+  background: linear-gradient(
+  to right,
+  #d9c1a3,
+  #b89b82,
+  #7b5e42
+);
+}
+
+.cafe-port:hover {
+    background: linear-gradient(to right, #7b5e42, #5C4B3B);
+}
+
+.nail-port {
+    background: linear-gradient(45deg, #d8b4f8, #f9c5d1);
+}
+
+.nail-port:hover {
+    background: linear-gradient(45deg, #c084fc, #f7a1b2);
+}
+
+.natural-stone-port {
+    background: linear-gradient(45deg, #e9e2d0, #c8b9a6);
+}
+
+.natural-stone-port:hover {
+    background: linear-gradient(45deg, #c8b9a6, #a4957d);
+    color: #fff;
+}
+
+.learning-port {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+}
+
+.learning-port:hover {
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+    box-shadow: 0 0 15px #0072ff;
+}
+
+.LP-port {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+}
+
+.LP-port:hover {
+    background: linear-gradient(45deg, #feb47b, #ff7e5f);
+    transform: scale(1.08);
+}
+
+.port-btn {
+  width: 170px;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(139, 109, 92, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  font-family: 'Merriweather', serif;
+}
+
+footer {
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+

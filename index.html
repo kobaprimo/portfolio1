@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ｜小林星大</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="shota kobayshi">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="my-image">
+            <h1 class="site-title"><ruby>小林 星大<rt>こばやししょうた</rt></ruby></h1>
+            <nav class="site-nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="about-btn">自己紹介</a></li>
+                    <li><a href="#skills" class="skills-btn">スキル</a></li>
+                    <li><a href="#portfolio" class="portfolio-btn">制作物</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+
+        <main class="site-main">
+
+            <section id="about" class="about-section">
+                <h2 class="section-title">自己紹介</h2>
+                <p class="about-text">こんにちは！私はフリーランスエンジニアを目指して学習中の小林です！</p>
+                <p class="about-text">簡単な経歴・資格等からご説明します。</p>
+                <ul class="Career-text">
+                    <li class="Career-item">年齢23歳 2001年11月7日生まれ</li>
+                    <li class="Career-item">2024年4月に阪南大学 経営情報学部を卒業</li>
+                    <li class="Career-item">卒業後は実家の飲食店の人材不足のため就業</li>
+                    <li class="Career-item">2025年4月に簿記二級を取得</li>
+                </ul>
+                <div class="btn-wrapper">
+                <a href="https://www.instagram.com/koba_programmer/" class="btn"><i class="fa-brands fa-instagram"></i>instagramはこちら</a>
+                </div>
+            </section>
+
+            <section id="skills" class="skills-section">
+                <h2 class="section-title">スキル</h2>
+                <div class="skills">
+                <div class="skill">
+                 <div class="skill-icon">
+                    <img src="my-profile-icon.png" alt="skill-icon" >
+                    <p>HTML</p>
+                 </div>
+                 <div class="skill-txt">
+                    <p>(div・ul・img・nav など)</p>
+                    <p>基礎学習済み</p>
+                 </div>
+                </div>
+                <div class="skill">
+                 <div class="skill-icon">
+                    <img src="my-profile-icon.png" alt="skill-icon" >
+                    <p>CSS</p>
+                 </div>
+                 <div class="skill-txt">
+                    <p>(margin・padding・display・hover など)</p>
+                    <p>基礎学習済み</p>
+                 </div>
+                </div>
+                <div class="skill">
+                 <div class="skill-icon">
+                    <img src="my-profile-icon.png" alt="skill-icon" >
+                    <p>Javascript</p>
+                 </div>
+                 <div class="skill-txt">
+                    <p>(let・const・if・for など)</p>
+                    <p>学習中</p>
+                 </div>
+                </div>
+                </div>
+            </section>
+            <section id="portfolio" class="portfolio-section">
+                <h2 class="section-title">制作物</h2>
+                <div class="project-card">
+                    <p>以下ポートフォリオでは自己紹介で使わなかったJavascriptを使用しました。</p>
+                    <p>ぜひご覧下さい</p>
+                    <div class="port-btn-container">
+                        <div>
+                            <img class="arrow-icon" src="arrow-icon.png" alt="">
+                            <button class="cafe-port port-btn" onclick="location.href='Cafe-Mello/cafe/index.html'">Cafe Mellow
+                            </button>
+                        </div>
+                        <div>
+                            <img class="arrow-icon" src="arrow-icon.png" alt="">
+                            <button class="nail-port port-btn" onclick="location.href='cafe-portfolio/index.html'">Vernis
+                            </button>
+                        </div>
+                        <div>
+                            <img class="arrow-icon" src="arrow-icon.png" alt="">
+                            <button class="natural-stone-port port-btn" onclick="location.href='cafe-portfolio/index.html'">Lunaria
+                            </button>
+                        </div>
+                        <div>
+                            <img class="arrow-icon" src="arrow-icon.png" alt="">
+                            <button class="learning-port port-btn" onclick="location.href='cafe-portfolio/index.html'">CodeNova
+                            </button>
+                        </div>
+                        <div>
+                            <img class="arrow-icon" src="arrow-icon.png" alt="">
+                            <button class="LP-port port-btn" onclick="location.href='cafe-portfolio/index.html'">LP
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="site-footer">
+            <div class="footer-left">
+                <p class="footer-name">&copy; 2025 小林星大</p>
+            </div>
+            <div class="footer-right">
+                <a href="mailto:ktycbrdm@gmail.com">お問い合わせ<i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+  const arrows = document.querySelectorAll('.arrow-icon');
+
+  setInterval(() => {
+    arrows.forEach(arrow => {
+      arrow.classList.toggle('blink');
+    });
+  }, 1500); // 1.5秒ごとに切り替え
+</script>
+
+</body>
+</html>
